@@ -1,0 +1,57 @@
+.hero {
+  align-items: flex-start;
+}
+
+.img {
+  margin-bottom: 2rem;
+}
+
+.text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.advantages {
+  gap: 2rem;
+
+  &__title {
+    margin-bottom: .5rem;
+  }
+}
+
+.game {
+  padding: 10rem 0;
+
+  background: url('/header.jpg') no-repeat center;
+  background-size: cover;
+
+  &__block {
+    align-items: center;
+  }
+}
+
+.block {
+  padding: 2rem 1rem;
+
+  background-color: var(--color-card);
+  border-radius: 16px;
+
+    text-align: center;
+
+  transition: all ease var(--animation-time);
+
+  &:hover {
+    background-color: var(--color-card-hover);
+  }
+}
+
+.btn {
+  margin-top: 3rem;
+}
+
+@media (max-width: 770px) {
+  .advantages {
+    flex-direction: column;
+  }
+
+  .img {margin: 0 auto;}
+}

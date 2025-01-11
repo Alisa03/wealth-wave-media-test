@@ -1,0 +1,27 @@
+.block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  padding: 40px;
+  width: 600px;
+  height: 400px;
+
+  gap: 20px;
+  
+  background-color: var(--color-card);
+  border-radius: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}

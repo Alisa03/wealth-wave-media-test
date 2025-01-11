@@ -1,0 +1,51 @@
+.btn {
+  position: relative;
+  padding: 0.5rem 0.7rem;
+
+  border-radius: 7px;
+
+  transition: all var(--animation-time) ease;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.button {
+  min-width: 7rem;
+
+  & span {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.icon {
+  --size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 2rem;
+
+  & svg {
+    width: var(--size);
+    height: var(--size);
+    letter-spacing: var(--size);
+  }
+}
+
+.text {
+  &:hover {
+    background-color: #747474;
+  }
+}
+
+.contained {
+  background-color: #411c8b;
+  color: var(--color-text);
+
+  &:hover {
+    background-color: #5329a8;
+  }
+}

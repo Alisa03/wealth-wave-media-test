@@ -1,0 +1,19 @@
+:root {
+    --color-text: #fff;
+    --color-background: #1D1E1E;
+
+    --color-main: #8E2DE2;
+    --color-card: #373B44;
+
+    --color-card-hover: #2d2d2d;
+    --color-main-hover: #4A00E0;
+
+    --gradient: linear-gradient(360deg, var(--color-background) 0%, var(--color-main-hover) 80%);
+
+    --border: 3px;
+
+    --animation-time: .7s;
+
+    --font-title: 'Sora';
+    --font-text: 'Inter';
+}

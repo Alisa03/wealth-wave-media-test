@@ -1,0 +1,32 @@
+.block {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    transition: all ease var(--animation-time);
+
+    &:hover {
+        color: var(--color-main);
+    } 
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+}
+
+.icon {width: 5vw}
+
+@media (max-width: 770px) {
+    .icon {width: 8vw}
+}
+
+@media (max-width: 450px) {
+    .list {gap: 1rem}
+    
+    .icon {width: 13vw}
+}
