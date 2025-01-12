@@ -8,7 +8,8 @@ import s from './button.module.scss'
 export function IconButton<C extends BaseButtonComponent = "button">({
     children,
     variant = 'text',
-    to, 
+    to,
+    className,
     onClick,
     ...props
 }: IButton<C>) {
@@ -16,7 +17,7 @@ export function IconButton<C extends BaseButtonComponent = "button">({
         <BaseButton<C>
             to={to}
             onClick={onClick}
-            className={clsx(s.btn, s.icon, s[variant])}
+            className={clsx(s.btn, className, s.icon, s[variant])}
             {...(props as BaseButtonProps<C>)}
         >
             {children}
